@@ -1,5 +1,477 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.banner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home.jpg?raw=true);
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  padding: 206px 0;
+}
+
+.distant {
+  width: 690px;
+}
+
+.banner-text {
+  background-color: #202020;
+  border: 1px solid #FFFFFF;
+  padding: 52px 86px;
+  position: relative;
+
+
+  h2 {
+    &:nth-child(1) {
+      background: linear-gradient(to bottom, #09ACF5, #62DB54);
+      // background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+      background-clip: text;
+      // -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      background-color: #FFFFFF;
+      top: 90px;
+      left: -91px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      background-color: #FFFFFF;
+      top: 90px;
+      right: -91px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    top: -5px;
+    left: -5px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    top: -5px;
+    right: -5px;
+  }
+}
+
+h3 {
+  font-size: 48;
+  line-height: 40px;
+  font-weight: bold;
+  padding-top: 80px;
+  padding-bottom: 64px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #62DB54;
+    top: 136px;
+  }
+}
+
+.teach {
+  background-color: #2D2D2D;
+  color: #FFFFFF;
+  padding: 80px 0;
+
+  h2 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .col-md-3 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      span {
+        background: linear-gradient(to bottom, #09ACF5, #62DB54);
+        background-clip: text;
+        color: transparent;
+      }
+
+      background-color: #202020;
+      border: 1px solid #62DB54;
+      border-radius: 12px;
+    }
+  }
+
+  .teach-title {
+    text-align: left;
+
+    &:nth-child(1)::after {
+      position: absolute;
+      content: '';
+      width: 50px;
+      height: 3px;
+      background-color: #62DB54;
+    }
+  }
+
+  .teach-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    padding-bottom: 32px;
+    width: 100%;
+
+    span {
+      padding-top: 53px;
+      padding-bottom: 28px;
+    }
+
+    p {
+      flex-grow: 1;
+      font-style: 18px;
+      line-height: 26px;
+      font-weight: bold;
+      margin: 0;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.col-md-3 {
+  &:nth-child(3) {
+    p {
+      &:nth-child(3) {
+        padding-bottom: 42px;
+      }
+    }
+  }
+}
+
+.course {
+  background-color: #1C1C1C;
+  color: #FFFFFF;
+  text-align: center;
+
+  .col-md-3 {
+    position: relative;
+    padding-bottom: 80px;
+
+    .course-content {
+      z-index: -1;
+      border: 1px solid #FFFFFF;
+      border-radius: 12px;
+      padding: 48px 48px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+
+      div {
+        flex-grow: 1;
+
+        h4 {
+          font-size: 24px;
+          line-height: 35px;
+          font-weight: bold;
+          padding-bottom: 16px;
+        }
+      }
+    }
+
+    &:nth-child(1)::before {
+      position: absolute;
+      content: '01';
+      font-size: 48px;
+      line-height: 56px;
+      background-color: #1C1C1C;
+      color: #62DB54;
+      font-weight: bold;
+      padding: 0 8px;
+      top: -28px;
+      left: 48px;
+    }
+
+    &:nth-child(2)::before {
+      position: absolute;
+      content: '02';
+      font-size: 48px;
+      line-height: 56px;
+      background-color: #1C1C1C;
+      color: #62DB54;
+      font-weight: bold;
+      padding: 0 8px;
+      top: -28px;
+      left: 48px;
+    }
+
+    &:nth-child(3)::before {
+      position: absolute;
+      content: '03';
+      font-size: 48px;
+      line-height: 56px;
+      background-color: #1C1C1C;
+      color: #62DB54;
+      font-weight: bold;
+      padding: 0 8px;
+      top: -28px;
+      left: 48px;
+    }
+
+    &:nth-child(4)::before {
+      position: absolute;
+      content: '04';
+      font-size: 48px;
+      line-height: 56px;
+      background-color: #1C1C1C;
+      color: #62DB54;
+      font-weight: bold;
+      padding: 0 8px;
+      top: -28px;
+      left: 48px;
+    }
+  }
+}
+
+.learn {
+  background-color: #2D2D2D;
+  color: #FFFFFF;
+
+  .learn-list {
+    ul {
+      display: flex;
+      margin: 0;
+      padding-left: 24px;
+      padding-bottom: 80px;
+      overflow-x: scroll;
+
+      li {
+        list-style: none;
+        border: 1px solid #FFFFFF;
+        border-radius: 8px;
+        margin-right: 16px;
+
+        a {
+          display: block;
+          padding: 24px 32px;
+          color: #FFFFFF;
+          text-decoration: none;
+
+          &:hover {
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hot {
+  background-color: #000000;
+  color: #FFFFFF;
+
+
+  .col-md-3 {
+    display: flex;
+
+    .card {
+      background-color: #2D2D2D;
+      border-radius: 24px;
+
+      &:hover {
+        border: 1px solid #62DB54;
+      }
+    }
+
+    .card-title {
+      text-align: center;
+      padding: 24px 0;
+      margin: 0;
+
+      img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+      }
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0 24px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #C1C1C1;
+
+      h5 {
+        flex-grow: 1;
+        margin: 0;
+        font-style: 20px;
+        line-height: 29px;
+        font-weight: bold;
+        padding-bottom: 37px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+
+        &:nth-child(2) {
+          color: #62DB54;
+          padding-bottom: 8px;
+        }
+      }
+    }
+
+    .card-footer {
+      padding: 16px 0;
+
+      h4 {
+        font-size: 32px;
+        line-height: 37px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+
+        span {
+          text-align: right;
+          font-size: 16px;
+          line-height: 24px;
+          padding-right: 8px;
+        }
+      }
+    }
+  }
+
+
+  button {
+    padding: 0;
+    border-radius: 8px;
+
+    a {
+      background: linear-gradient(to right, #09ACF5, #62DB54);
+      display: block;
+      padding: 8px 32px;
+      color: #FFFFFF;
+      text-decoration: none;
+      border-radius: 8px;
+
+      &:hover {
+        border-radius: 8px;
+        color: #000000;
+      }
+    }
+  }
+
+  padding-bottom: 80px;
+}
+
+.provide-list {
+  display: flex;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  background-color: #1C1C1C;
+
+  li {
+    background-color: rgba(28, 28, 28, .9);
+    background-blend-mode: multiply;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info01.jpg?raw=true);
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    height: 615px;
+    color: #FFFFFF;
+    padding-left: 50px;
+
+    &:hover {
+      background-color: rgba(28, 28, 28, 0.12);
+
+      span {
+        color: #62DB54;
+      }
+
+      .provide-title::after {
+        width: 70px;
+        background-color: #62DB54;
+      }
+
+      p {
+        opacity: 1;
+      }
+    }
+
+    .provide-title {
+      &::after {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        background-color: #FFFFFF;
+      }
+
+      h4 {
+        padding-top: 18px;
+        font-size: 24px;
+        line-height: 35px;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      padding-top: 32px;
+      opacity: 0.5;
+    }
+
+    &:nth-child(2) {
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info02.jpg?raw=true);
+    }
+
+    &:nth-child(3) {
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info03.jpg?raw=true);
+    }
+
+    &:nth-child(4) {
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info04.jpg?raw=true);
+    }
+  }
 }
